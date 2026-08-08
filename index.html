@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mi Perfil Profesional-Creado con HTML5">
+    <title>Mi Perfil Profesional</title>
+</head>
+<body>
+        <!-- Encabezado y Menú de Navegación -->
+    <header>
+        <h1>Mi Perfil Profesional</h1>
+        <nav>
+            <ul>
+                <li><a href="#Sobre-mi">Sobre mí</a></li>
+                <li><a href="#Proyectos">Proyectos</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido Principal -->
+    <main>
+
+        <!-- Sección 1: Presentación e Imagen -->
+        <section id="#Sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Bienvenido a mi sitio web. Está creado con HTML5.</p>
+            <img src="imagen-jony.jpg"alt="Fotografía software", width="300" height="200">
+            <h2>Biografía</h2>
+            <p>Mi nombre es Jonathan David Hernández Gamas. Tengo 22 años y en novimbre cumplo 23</p>
+            <p>Actualmente estoy estudiando Ingeniería en Sistemas en la Universidad Mariano Gálvez de Guatemala.</p>
+            <p>Me apasiona la tecnología y la programación, y siempre estoy buscando aprender nuevas habilidades y mejorar mis conocimientos en el campo de la informática.</p>
+            <h2>Habilidades y Competencias</h2>
+            <ul>
+                <li>Soy una Persona proactiva y responsablet</li>
+                <li>Me importa mucho mi crecimiento personal</li>
+                <li>Resolución de problemas y pensamiento lógico</li>
+            </ul>
+        </section>
+
+        <!-- Sección 2: Tabla y Datos (El ciclo y el puntaje no me recuerdo jsjsjsjs) -->
+        <section id="#Proyectos">
+            <h2>Tabla de Cursos Aprobados</h2>
+            <table border="1">
+                <caption>Descripción de los Cursos</caption>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Ciclo</th>
+                        <th>Puntaje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Investigación de Operaciones</td>
+                        <td>Quinto</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Estadística</td>
+                        <td>Quinto</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>Desarrollo Humano y Profesional</td>
+                        <td>Primero</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sección 3: Formulario con Validaciones -->
+        <section id="#contacto">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="nombre">Nombre completo:</label><br>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Escribe tu nombre">
+                </p>
+                
+                <p>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                </p>
+
+                <p>
+                    <label for="mensaje">Mensaje o Comentario:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                </p>
+
+                <button type="submit">Enviar formulario</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>&copy; 2026 Mi Perfil Profesional. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
