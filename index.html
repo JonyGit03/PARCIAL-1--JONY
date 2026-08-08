@@ -5,6 +5,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mi Perfil Profesional-Creado con HTML5">
     <title>Mi Perfil Profesional</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --bg: #f4f7ff;
+            --surface: #ffffff;
+            --surface-alt: #eef2ff;
+            --primary: #3b5bdb;
+            --primary-soft: #d6defc;
+            --accent: #f59e0b;
+            --text: #1f2937;
+            --muted: #4b5563;
+            --border: #d1d5db;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle at top left, #eef4ff 0%, var(--bg) 45%);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header, footer {
+            text-align: center;
+            padding: 1.75rem 1rem;
+            background: var(--primary);
+            color: #ffffff;
+        }
+
+        h1, h2 {
+            margin: 0.5rem 0;
+            font-family: 'Georgia', serif;
+        }
+
+        h1 {
+            font-size: clamp(2.25rem, 2.5vw, 3rem);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0.75rem 0 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.88);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        main {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 2rem 1rem 3rem;
+        }
+
+        section {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 1rem;
+            padding: 1.75rem;
+            margin-bottom: 1.75rem;
+            box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+        }
+
+        section:nth-child(even) {
+            background: var(--surface-alt);
+        }
+
+        p, li, label {
+            color: var(--muted);
+        }
+
+        ul {
+            padding-left: 1.25rem;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            margin: 1rem 0;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            background: white;
+        }
+
+        caption {
+            caption-side: top;
+            text-align: left;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+
+        th, td {
+            padding: 0.9rem 0.75rem;
+            border: 1px solid var(--border);
+            text-align: left;
+        }
+
+        th {
+            background: var(--primary-soft);
+            color: var(--primary);
+        }
+
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.85rem;
+            border: 1px solid var(--border);
+            border-radius: 0.65rem;
+            font: inherit;
+            background: #f8fafc;
+            color: var(--text);
+        }
+
+        button {
+            width: fit-content;
+            padding: 0.95rem 1.5rem;
+            border: none;
+            border-radius: 0.75rem;
+            background: var(--accent);
+            color: #111827;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+        }
+
+        button:hover {
+            background: #d97706;
+            transform: translateY(-1px);
+        }
+
+        footer p {
+            margin: 0;
+            color: rgba(255,255,255,0.82);
+        }
+
+        @media (max-width: 640px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            section {
+                padding: 1.35rem;
+            }
+        }
+    </style>
 </head>
 <body>
         <!-- Encabezado y Menú de Navegación -->
@@ -22,10 +188,10 @@
     <main>
 
         <!-- Sección 1: Presentación e Imagen -->
-        <section id="#Sobre-mi">
+        <section id="Sobre-mi">
             <h2>Sobre mí</h2>
             <p>Bienvenido a mi sitio web. Está creado con HTML5.</p>
-            <img src="imagen-jony.jpg"alt="Fotografía software", width="300" height="200">
+            <img src="imagen-jony.jpg" alt="Fotografía software" width="300" height="200">
             <h2>Biografía</h2>
             <p>Mi nombre es Jonathan David Hernández Gamas. Tengo 22 años y en novimbre cumplo 23</p>
             <p>Actualmente estoy estudiando Ingeniería en Sistemas en la Universidad Mariano Gálvez de Guatemala.</p>
@@ -39,7 +205,7 @@
         </section>
 
         <!-- Sección 2: Tabla y Datos (El ciclo y el puntaje no me recuerdo jsjsjsjs) -->
-        <section id="#Proyectos">
+        <section id="Proyectos">
             <h2>Tabla de Cursos Aprobados</h2>
             <table border="1">
                 <caption>Descripción de los Cursos</caption>
@@ -71,7 +237,7 @@
         </section>
 
         <!-- Sección 3: Formulario con Validaciones -->
-        <section id="#contacto">
+        <section id="contacto">
             <h2>Formulario de Contacto</h2>
             <form action="#" method="post">
                 <p>
